@@ -68,17 +68,6 @@ public class NumerosComplejos {
         c = new NumerosComplejos(s, s2);
         return c;
     }
-    public NumerosComplejos division(NumerosComplejos c2){
-        int s, s2,n1, n2, n3, n4;
-        NumerosComplejos c;
-        s = ((this.numerouno * c2.numerouno) + (this.numerodos * c2.numerodos)) + ((this.numerodos * c2.numerouno)+((-1)*(this.numerouno * c2.numerodos)));
-        s2 = (c2.numerouno * c2.numerouno) + ((-1)*(c2.numerodos * c2.numerodos));
-        c = new NumerosComplejos(s, s2);
-        return c;
-    }
-    
-    
-    
     
    
     

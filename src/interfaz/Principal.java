@@ -50,10 +50,10 @@ public class Principal extends javax.swing.JFrame {
         txtNumeroSeis = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         cmdCalcular = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Numeros Complejos");
@@ -64,10 +64,14 @@ public class Principal extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("Numeros Complejos");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, -1, -1));
+
+        txtNumeroUno.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtNumeroUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 30, -1));
 
         jLabel2.setText("+");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, -1, 40));
+
+        txtNumeroDos.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtNumeroDos, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 30, -1));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -85,14 +89,18 @@ public class Principal extends javax.swing.JFrame {
         jLabel5.setText(")");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 50, 30, 40));
 
-        cmbOp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Suma", "Resta", "Multiplicacion", "Division" }));
+        cmbOp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Suma", "Resta", "Multiplicacion" }));
         jPanel1.add(cmbOp, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("(");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 50, 30, 40));
+
+        txtNumeroTres.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtNumeroTres, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, 30, -1));
+
+        txtNumeroCuatro.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtNumeroCuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, 30, -1));
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -109,6 +117,7 @@ public class Principal extends javax.swing.JFrame {
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 54, -1, 30));
 
         txtNumeroCinco.setEditable(false);
+        txtNumeroCinco.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtNumeroCinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, 30, -1));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -120,6 +129,7 @@ public class Principal extends javax.swing.JFrame {
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 50, -1, 40));
 
         txtNumeroSeis.setEditable(false);
+        txtNumeroSeis.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtNumeroSeis, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 60, 30, -1));
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -131,11 +141,6 @@ public class Principal extends javax.swing.JFrame {
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText(")");
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 50, 30, 40));
-
-        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setText("=");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, 20, 40));
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Options", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 0, 14))); // NOI18N
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -151,11 +156,16 @@ public class Principal extends javax.swing.JFrame {
         jButton2.setText("Limpiar");
         jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 70, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 30, 90, 120));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 20, 90, 120));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 170));
+        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel19.setText("=");
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, 20, 40));
 
-        setSize(new java.awt.Dimension(886, 214));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 170));
+
+        setSize(new java.awt.Dimension(837, 229));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -208,14 +218,13 @@ public class Principal extends javax.swing.JFrame {
             case 2:
                 c3 = c1.Multiplicacion(c2);
             break;
-            case 3:
-                c3 = c1.division(c2);
-            break;
+            
         }
-        }
-        
         txtNumeroCinco.setText(""+c3.getNumerouno());
         txtNumeroSeis.setText(""+c3.getNumerodos());
+        }
+        
+        
         
     }//GEN-LAST:event_cmdCalcularActionPerformed
 
@@ -263,7 +272,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
